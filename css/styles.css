@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=New+Amsterdam&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Indie+Flower&family=Matemasie&family=New+Amsterdam&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+/* header - navbar start*/
+.nav-bar {
+    background-color: #f7f7f7;
+    color: #7da2a9;
+}
+
+
+.logo-wrapper {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+
+    font-style: normal;
+}
+
+@media only screen and (min-width: 1200px) {
+    .menu-average {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .search-bar {
+        border: 1px solid #7da2a9;
+        height: 33px;
+        width: 40px;
+        border-radius: 10px;
+        padding: 2px;
+        transition: width 0.3s ease, padding 0.3s ease;
+    }
+
+    .search-bar:focus {
+        border: 1px solid black;
+        height: 31px;
+        width: 300px;
+        border-radius: 10px;
+        padding: 2px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .search-bar {
+        border: 1px solid #7da2a9;
+        height: 33px;
+        width: 300px;
+        border-radius: 10px;
+        padding: 2px;
+        transition: width 0.3s ease, padding 0.3s ease;
+    }
+}
+
+
+
+.menu-list-item {
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+    color: #7da2a9;
+    font-weight: bold;
+    border-left: 1px solid #f7f7f7;
+    border-right: 1px solid #f7f7f7;
+}
+
+.menu-list-item:hover {
+    color: #678389;
+    border-left: 1px solid rgb(125, 162, 169, 0.3);
+    border-right: 1px solid rgb(125, 162, 169, 0.3);
+
+}
+
+.active-menu-item{
+    color: #5d767c;
+}
+
+.user-icon{
+    width: 25px;
+    height: 25px;
+    
+    background-image: url('../img/user.png');
+    background-size: contain; /* İkonun boyutlandırılması */
+    background-repeat: no-repeat; /* Tekrar etmemesi */
+}
+
+.sing-user:hover .user-icon{
+    background-image: url('../img/user_hover.png');
+}
+
+.basket-icon{
+    width: 25px;
+    height: 25px;
+    
+    background-image: url('../img/basket.png');
+    background-size: contain; /* İkonun boyutlandırılması */
+    background-repeat: no-repeat; /* Tekrar etmemesi */
+}
+
+.sing-basket:hover .basket-icon{
+    background-image: url('../img/basket_hover.png');
+}
+
+/* header - navbar end*/
+
+/*hero start*/
+.body-img{
+    
+    background-size: cover; /* Resmi tam sığacak şekilde boyutlandırır */
+    background-position: center; /* Resmi ortalar */
+    background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 78%, rgba(255, 255, 255, 1)), 
+    url("../img/homepage.jpg") no-repeat center center/cover;
+    
+    
+    height: 850px;
+}
+
+.body-container{
+    padding: 0;
+}
+
+.content{
+    height: 100%;
+}
+
+
+.radio-canada-big {
+    font-family: "Radio Canada Big", sans-serif;
+    font-optical-sizing: auto;
+    color: white;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+  }
+
+
+  .indie-flower-regular {
+    font-family: "Indie Flower", cursive;
+    color: white    ;
+    font-weight: 400;
+    font-size: 22px;
+    font-style: normal;
+  }
+
+.shopping-btn{
+    background-color: #678389;
+    color: white;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    padding: 7px 0;
+    border-radius: 8px;
+    
+}
+
+.shopping-btn:hover{
+    background-color: #5F797F;
+    color: white;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    padding: 7px 0;
+    border-radius: 8px;
+}
+/*hero end*/
+
+/*featured-products start*/
+.cards{
+    height: 250px;
+    
+}
+
+.product-cols{
+    width: 300px;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: bold;
+    color: #FF6F00;
+}
+
+.description{
+    font-size:13px ;
+}
+
+.pointer-over{
+    cursor: pointer;
+}
+/*feastured-products end*/
+
+/*testimonials start*/
+.comment-container{
+    text-align: center;
+    background-color: #7da2a9;
+}
+
+.comment-title{
+    font-size: 2em;
+}
+
+
+.comment{
+    font-size: 1.1em;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+/*testimonials end*/
+
+/* footer start*/
+.footer-container{
+    background-color: #7da2a9;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* footer end*/
+
+/*--------------------------------*/
+
+/*about jumbotron*/
+
+.about-jumbotron{
+    max-width: 700px;
+    color: black;
+    font-size: 20px;
+    border: 1px solid #5d767c77; 
+    background-color: #f7f7f7;
+}
+
+/*------------------------*/
+
+/*contact start*/
+
+.send-button{
+    background-color: #7da2a9;
+    padding: 5px 12px;
+    border-radius: 5px;
+    border: 1px solid #5d767c77;
+    color: white;
+}
+.send-button:hover{
+    background-color: #5F797F;
+}
+
+.contact-from{
+    
+    max-height: auto;
+    
+}
+/*contact end*/
+
+/*login start*/
+
+.login-form-btn{
+    font-size: 20px;
+    background-color: #5d767c;
+    color: white; 
+}
+
+.login-form-btn:hover{
+    background-color: #678389 ;
+    font-size: 20px;
+    
+    color: white; 
+    
+}
+
+.from-a{
+    color: #5F797F;
+    font-size: 18px;
+}
+
+.from-a:hover{
+    color: #5F797F;
+    font-size: 18px;
+}
+
+.from-container{
+    height: 73vh;
+}
+
+.form-w{
+    width: 30%;
+}
+
+
+/*login end*/
