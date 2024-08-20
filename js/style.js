@@ -11,6 +11,10 @@ function activePage() {
     } else if (page === "contact.html") {
         document.getElementById("contact-nav").classList.add("active-menu-item");
     }
+    else if(page ==="login.html") {
+        document.getElementById("login-nav").classList.add("active-menu-item")
+        document.getElementById("user-icon").classList.add("active-user-button")
+    }
 }
 
 
@@ -20,8 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
     activePage();
 }, false);
 
-function navigateToProductPage(){
-    window.location.href="product.html";
+function changeImage(element) {
+    document.getElementById('featured').src = element.src;
 }
 
 
